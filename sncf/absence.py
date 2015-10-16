@@ -3,7 +3,7 @@ import requests
 
 
 def getData(url):
-    r = requests.get(url)
+    r = requests.get(url, verify=False)
     return r.json()
 
 def main():
